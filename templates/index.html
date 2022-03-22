@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sorteo Copa Libertadores 2022</title>
+</head>
+
+<body>
+	<h2>Simulación del sorteo de la Copa Libertadores 2022</h2>
+	<h3>Bolilleros</h3> 
+	<table>	
+	{% for tabla in tablas %}
+	            {{ tabla|safe }}
+	{% endfor %}
+	</table>
+
+
+	<hr>
+	<h2><a href="/sorteo">Sortear grupos</a> </h2>
+	<hr>
+
+	{% if mostrar_sorteo %}
+		<h3>Grupos</h3>
+		{% for equipo in grupos %}
+		            {{ equipo|safe }}
+		{% endfor %}
+
+	{% endif %}
+
+</body>
+
+<hr>
+<footer>
+  <p><a href="https://github.com/mumoyarce96">Github</a></p>
+</footer>
+</html>
