@@ -2,4 +2,4 @@
 
 Simular sorteo de la Copa Libertadores 2022 [AQUÍ](https://sorteolibertadores.herokuapp.com/).
 
-Este repositorio fue _deployed_ en Heroku.
+Este repositorio fue desarrollado con Flask y _deployed_ en Heroku.
